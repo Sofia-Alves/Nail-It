@@ -15,9 +15,9 @@
             <h4 class="entry"> Username </h4>
             <input type = "text" placeholder="Username" required="" id="username"/>
         </div>
-        <div id="username">
+        <div id="email">
             <h4 class="entry"> Username </h4>
-            <input type = "text" placeholder="Username" required="" id="username"/>
+            <input type = "text" placeholder="email" required="" id="email"/>
         </div>
 
 
