@@ -1,25 +1,38 @@
-<!DOCTYPE html>
+Æ<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../design/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title>Nail-It | Sign Up</title>
 </head>
 <body>
-    <section id="content">
-    <form action="">
-        <h2>Nail-It</h2>
+    <section class="container">
+    <h5 class="mb-5" > NEW ACCOUNT</h5>
+    <form action="" class="" method="POST">
+        <h2 class="mt-5">Nail-It</h2>
         <h3> Sign Up </h3>
-        <div id="username">
-            <h4 class="entry"> Username </h4>
-            <input type = "text" placeholder="Username" required="" id="username"/>
+        <div id="firstname">
+            <h4 class="entry"> First-Name :</h4>
+            <input type = "text" placeholder="FirstName" required="" name="firstname"/>
+        </div>
+        <div id="lastname">
+            <h4 class="entry"> Last-Name :</h4>
+            <input type = "text" placeholder="Last-Name" required="" name="lastname"/>
         </div>
         <div id="email">
-            <h4 class="entry"> Username </h4>
-            <input type = "text" placeholder="email" required="" id="email"/>
-        </div>
+            <h4 class="entry">E-mail:</h4>
+            <input type="email" placeholder="you email" name="email" required />
 
+        </div>
+        <div id="password">
+            <h4 class="entry">Password:</h4>
+            <input type="password" placeholder="password" name="password" required />
+        </div>
+        <div id="submit">
+            <button type="submit" class="btn btn-primary" name="signup" value="done">Register</button>
+        </div>
 
     </form>
     </section>
