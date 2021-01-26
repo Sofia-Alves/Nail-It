@@ -1,5 +1,5 @@
-<footer>
+<header>
     <div class="flex-footer">
-        
+        <p></p>
     </div>
-</footer>
+</header>
