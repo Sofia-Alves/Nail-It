@@ -8,14 +8,16 @@
 </head>
 <body>
     <section class="content">
-        <form action="">
+        <form action="", method="POST">
             <h2>Nail-It</h2>
-            <div class="password_username">
-                <input type="text" placeholder="Username" required="" class="username"/>
-                <input type="password" placeholder="Password" required="" class="password"/>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="email" name="email" class="email" required/>
+                <label for="password">Password:</label>
+                <input type="password" placeholder="Password" name="password"  class="password" required/>
             </form>
                 <a href="#" class="lnkforget">Forgot?</a>
-                <input type="submit" value="Log in" class="submit"/>
+               <button type="submit" classe="btn btn-success" name="login" value="done">Login</button>
             </div>
                 </section>
         <div class = "no_account">
