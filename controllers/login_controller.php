@@ -22,7 +22,7 @@ if(isset($_POST['login']) && $_POST['login']=='done'){
             $_SESSION['lastname']= $sessionLastName;
             $_SESSION['password']=$sessionPass;
             $_SESSION['email']=$email;
-            header('Location:index.php?page=home');
+            header('Location: ../views/home_view.php ?page=home');
 
         }
 
