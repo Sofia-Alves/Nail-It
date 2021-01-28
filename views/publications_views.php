@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
- <?php include_once 'include/header.php';?>
+ 
     <div class="container">
         <form method="post" action="" id="article">
             <label for="titre">Title</label><br/>
@@ -27,6 +27,5 @@
        
         
 </body>
-<?php include_once("../includes/footer.php") ?>
 </html>
 
