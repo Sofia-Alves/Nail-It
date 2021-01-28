@@ -23,6 +23,13 @@
         <div class = "no_account">
                 <h4>Don't have an account?<a href="./signup_view.php"> Sign up here</a></h4>
             </div>
+    <section class= "slideshow-container">
+            <img class ="mySlides fade" src="../design/image/nail-2021.jpg" style = "width:40%">
+            <img class ="mySlides fade" src="../design/image/nail-paillette.jpg" style = "width:40%">
+            <img class ="mySlides fade" src="../design/image/nail-freestyle.jpg" style = "width:40%">
+    </section>
+[10:11]
+<script src= "./script.js"></script>
     
 </body>
 <footer>

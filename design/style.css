@@ -1,19 +1,39 @@
+
+
+* {
+    box-sizing: border-box;
+    padding-top: none;
+    padding-bottom: none;
+    margin:0;
+	padding:0;
+}
+
 body{
-    background: #FAFAFA;
-    background-image: url("https://i.pinimg.com/originals/e6/0a/4c/e60a4c7406884fa855b913b09f07f005.jpg");
+    text-align: center;
+   	margin-left: 5em;
+	margin-right: 5em;
 
 }
 
+ /*** LOG IN ***/
+
+ /**/
 .content{
     background: white;
     border: thin solid #F5F5F5;
-    margin: 0 auto;
+    margin: 5em;
     padding: 10px 0px 25px;
-    position: relative;
+    position: absolute;
     text-align: center;
     width: 348px;
     top: 30%;
 }
+
+.slideshow-container {
+    width: 100%;
+    position: relative;
+    margin: auto;
+  }
 
 .no_account{
     background: white;
@@ -100,3 +120,35 @@ a{
     font-weight: normal;
     padding: 6px;
 }
+
+/**** log in carroussel *****/
+
+/* Slideshow container */
+
+
+
+.mySlides {display: none;}
+
+img {vertical-align: middle;}
+
+
+.active {
+    background-color: #717171;
+}
+  /* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
