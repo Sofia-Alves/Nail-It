@@ -8,7 +8,7 @@ define('PATH', substr($_SERVER['PHP_SELF'],0 ,-9)); // configuration pour les im
 
 //database setup
 
-define('DATABASE_HOST',"localhost");
+define('DATABASE_HOST',"localhost:8889");
 define('DATABASE_NAME',"Nail-it");
 define('DATABASE_USER',"root");
 define('DATABASE_PASSWORD',"root");

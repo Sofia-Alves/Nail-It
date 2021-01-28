@@ -28,9 +28,10 @@
             <img class ="mySlides fade" src="../design/image/nail-paillette.jpg" style = "width:40%">
             <img class ="mySlides fade" src="../design/image/nail-freestyle.jpg" style = "width:40%">
     </section>
-[10:11]
 <script src= "./script.js"></script>
-    
+    <footer>
+    </footer>  
 </body>
-<footer>
-</footer>
+</html>
+
+
