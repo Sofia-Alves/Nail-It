@@ -6,11 +6,11 @@ class Bloggeuse{
     public function createBloggeuse($firstname , $lastname, $email, $password){
         global $db; 
         $newBloggeuse = $db ->prepare('
-        INSERT INTO bloggeuse(firstname,lastname,email,password) VALUES (?, ?, ?, ?)');
+        INSERT INTO bloggeuse(firstname,lastname,email,password,avatar) VALUES (?, ?, ?, ?, ?)');
     }
 
     //fonction pour verifier si mail existe deja (retourne un bool (0/1))
-    public function checkMailBloggeuse($mail){
+    public function verifyMailAvalable($mail){
         global $db;
         $reqDatas = $db ->prepare('
         SELECT * FROM bloggeuse
@@ -23,7 +23,30 @@ class Bloggeuse{
         
 
     }
+    // fonction pour verifier les info lors du login du tableau bloggeuse BDD
+
+    public function checkDatasLogin($email,$pass){
+        global $db;
+        $reqDatas = $db ->prepare('
+        SELECT * FROM bloggeuse
+        WHERE email= ?
+        AND password= ?
+        ');
+        $reqDatas->execute(array($email,$pass));
+        $datasExists = $reqDatas->rowCount();
+        return $dataExists;
+    }
+
+   // fonction pour recuperer les info du tableau bloggeuse en BDD
 
 
+   public function getDatasBloggeuse($email){
+       global $db;
+       $bloggeuse = $db -> prepare('
+       SELECT * FROM blogeuse WHERE email = ?');
+       $bloggeuse ->execute(array($email));
+       $req = $bloggeuse -> fetch(PDO::FETCH_ASSOC);
+       return $req ;
+   }
     
 }

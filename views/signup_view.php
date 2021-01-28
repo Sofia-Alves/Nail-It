@@ -10,6 +10,7 @@
 <body>
     <section class="container">
     <h5 class="mb-5" > NEW ACCOUNT</h5>
+    <?php if (isset($alertSign)){echo $alertSign;} ?>
     <form action="" class="" method="POST">
         <h2 class="mt-5">Nail-It</h2>
         <h3> Sign Up </h3>
