@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="content">
-        <form action="/Nail-it/login", method="POST">
+        <form action="Nail-it/login", method="POST">
             <h2>Nail-It</h2>
             <div class="email">
                 <label for="email">Email:</label>
@@ -27,7 +27,7 @@
         </form>        
     </section>
     <div class = "no_account">
-        <h4>Don't have an account?<a href="./signup_view.php"> Sign up here</a></h4>
+        <h4>Don't have an account?<a href="./views/signup_view.php"> Sign up here</a></h4>
     </div>
     <section id="carouselExampleSlidesOnly" class= "carousel slide" data-ride="carousel">
         <div class="carousel-inner">
