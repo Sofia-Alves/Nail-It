@@ -1,10 +1,3 @@
-<?php
-    session_start();
-    if(!isset($_SESSION['login']) !== true){
-        header("location: ./login_view.php ");
-        exit;
-    }
-?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>

@@ -12,21 +12,23 @@
 </head>
 <body>
     <section class="content">
-        <form action="", method="POST">
+        <form action="/Nail-it/login", method="POST">
             <h2>Nail-It</h2>
             <div class="email">
                 <label for="email">Email:</label>
                 <input type="email" placeholder="email" name="email" class="email" required/>
+            </div>
+            <div class="password">
                 <label for="password">Password:</label>
                 <input type="password" placeholder="Password" name="password"  class="password" required/>
-            </form>
-                <a href="#" class="lnkforget">Forgot?</a>
-               <button type="submit" classe="btn btn-success" name="login" value="done">Login</button>
             </div>
-                </section>
-        <div class = "no_account">
-                <h4>Don't have an account?<a href="./signup_view.php"> Sign up here</a></h4>
-            </div>
+            <a href="#" class="lnkforget">Forgot?</a>
+            <button type="submit" classe="btn btn-success" name="login" value="done">Login</button>
+        </form>        
+    </section>
+    <div class = "no_account">
+        <h4>Don't have an account?<a href="./signup_view.php"> Sign up here</a></h4>
+    </div>
     <section id="carouselExampleSlidesOnly" class= "carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval = "2000">

@@ -6,7 +6,7 @@ class Bloggeuse{
     public function createBloggeuse($firstname , $lastname, $email, $password){
         global $db; 
         $newBloggeuse = $db ->prepare('
-        INSERT INTO bloggeuse(firstname,lastname,email,password,avatar) VALUES (?, ?, ?, ?, ?)');
+        INSERT INTO bloggeuse(firstname,lastname,email,password) VALUES (?, ?, ?, ?)');
     }
 
     //fonction pour verifier si mail existe deja (retourne un bool (0/1))
@@ -32,8 +32,11 @@ class Bloggeuse{
         WHERE email= ?
         AND password= ?
         ');
+        echo '$email'.$email;
+        echo '$pass'.$pass;
         $reqDatas->execute(array($email,$pass));
-        $datasExists = $reqDatas->rowCount();
+        $dataExists = $reqDatas->rowCount();
+        echo '$dataExists'.$dataExists;
         return $dataExists;
     }
 
