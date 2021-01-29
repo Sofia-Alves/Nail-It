@@ -1,6 +1,3 @@
-<?php 
-    require("../controllers/login_controller.php");
-?>
 
 <!DOCTYPE html>
 <html lang="fr">

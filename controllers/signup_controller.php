@@ -18,8 +18,6 @@ if(isset($_POST['signup']) && $_POST['signup']=='done'){
             $newBloggeuse = $bloggeuse -> createBloggeuse($firstname,$lastname,$email, $password);
             $alertSign= Alert::message('You registered successfully','green','grey');
         }
-    }
-
     }else{
         $AlertSign= Alert::message('veuillez remplir toutes les cases' , 'red','grey');
     }
