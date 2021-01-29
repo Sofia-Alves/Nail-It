@@ -1,4 +1,4 @@
-<header>
+<header class= "header">
     <div class="flex-footer">
     <!-- LOGO HERE -->
     <img src="" alt="logo">

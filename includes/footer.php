@@ -1,11 +1,12 @@
 
-<footer>
-    <h2> All credits to Nail It &copy</h2>
-    <nav class="menu">
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+<footer class = "footer">
+
+    <h2 id="copyright"> All credits to Nail It &copy</h2>
+    <nav >
+        <ul class="menu">
+            <li class="footerMenu"><a href="#">Home</a></li>
+            <li class="footerMenu"><a href="#">About</a></li>
+            <li class="footerMenu"><a href="#">Contact</a></li>
         </ul>
     </nav> 
 </footer>
