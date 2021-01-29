@@ -11,7 +11,6 @@
     <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad 
       <a href="" title="" class="fade-text">minim veniam.</a></p>
     <div class="like"><button>&hearts;</button></div>
-  </article>
-  
+  </article> 
 </section>
   
