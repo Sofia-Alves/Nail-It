@@ -22,7 +22,7 @@ if(isset($_POST['signup']) && $_POST['signup']=='done'){
             echo "register done";
         }
     }else{
-        $AlertSign= Alert::message('veuillez remplir toutes les cases' , 'red','grey');
+        $alertSign= Alert::message('veuillez remplir toutes les cases' , 'red','grey');
     }
 }
 
