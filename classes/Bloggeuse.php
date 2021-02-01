@@ -7,6 +7,7 @@ class Bloggeuse{
         global $db; 
         $newBloggeuse = $db ->prepare('
         INSERT INTO bloggeuse(firstname,lastname,email,password) VALUES (?, ?, ?, ?)');
+        $newBloggeuse -> execute(array($firstname,$lastname,$email,$password));
     }
 
     //fonction pour verifier si mail existe deja (retourne un bool (0/1))

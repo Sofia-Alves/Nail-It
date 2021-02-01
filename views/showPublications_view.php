@@ -1,6 +1,5 @@
 
-<?php include_once './classes/Bloggeuse.php'; ?>
-<?php include_once './classes/Publication.php'; ?>
+<title> <?=ucfirst($page); ?> Publication </title>
 <section>
   <?php foreach($showBloggeuse as $bloggeuse ): ?>
 

@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link rel ="stylesheet" href= "../design/styleGeneral.css">
+    <link rel ="stylesheet" href= "./design/styleGeneral.css">
     <title>logIn Page</title>
     
 </head>
 <body>
     <section class="content">
-        <form action="Nail-it/login", method="POST">
+        <form action="", method="POST">
             <h2>Nail-It</h2>
             <div class="email">
                 <label for="email">Email:</label>
@@ -27,18 +27,18 @@
         </form>        
     </section>
     <div class = "no_account">
-        <h4>Don't have an account?<a href="./views/signup_view.php"> Sign up here</a></h4>
+        <h4>Don't have an account?<a href="./signup"> Sign up here</a></h4>
     </div>
     <section id="carouselExampleSlidesOnly" class= "carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval = "2000">
-                <img class="d-block w-100" src="../design/image/nail-2021.jpg" >
+                <img class="d-block w-100" src="./design/image/nail-2021.jpg" >
             </div>
             <div class="carousel-item" data-interval = "2000">
-                <img class="d-block w-100" src="../design/image/nail-paillette.jpg" >
+                <img class="d-block w-100" src="./design/image/nail-paillette.jpg" >
             </div>
             <div class="carousel-item" data-interval = "2000">
-                <img class="d-block w-100" src="../design/image/nail-freestyle.jpg">
+                <img class="d-block w-100" src="./design/image/nail-freestyle.jpg">
             </div>
         </div>
     </section>

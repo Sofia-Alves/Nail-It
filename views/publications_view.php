@@ -20,7 +20,7 @@
              <p> 
                 <label for="image">Choose a photo for your publication</label>
                 <input type="file" name="image" id="image"></br>
-                <button type="submit">Upload</button>
+                <button type="submit" name="publication">Upload</button>
 
             </p>
          </form>
