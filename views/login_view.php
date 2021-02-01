@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" 
     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel ="stylesheet" href= "../design/styleGeneral.css">
-    <title>logIn Page</title>
+    <title><?= ucFirst($page);?>Login-Page</title>
     
 </head>
 <body>
@@ -27,7 +27,7 @@
         </form>        
     </section>
     <div class = "no_account">
-        <h4>Don't have an account?<a href="./views/signup_view.php"> Sign up here</a></h4>
+        <h4>Don't have an account?<a href="./signup"> Sign up here</a></h4>
     </div>
     <section id="carouselExampleSlidesOnly" class= "carousel slide" data-ride="carousel">
         <div class="carousel-inner">

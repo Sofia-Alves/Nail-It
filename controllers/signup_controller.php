@@ -11,7 +11,7 @@ if(isset($_POST['signup']) && $_POST['signup']=='done'){
        // sha1 c est pour encrypter le mot de passe ( ça remplace l ancien md5 )
         $bloggeuse =new Bloggeuse();
        // verifier si l email est existant ou pas ça va retourner (0/1)
-        $existedBloggeuse = $bloggeuse ->verifyMailAvalable();
+        $existedBloggeuse = $bloggeuse ->verifyMailAvalable($email);
         if($existedBloggeuse==1){
             $alertSign = Alert::message('Mail already exists !!!','red','orange');
         }else{
@@ -19,7 +19,7 @@ if(isset($_POST['signup']) && $_POST['signup']=='done'){
             $alertSign= Alert::message('You registered successfully','green','grey');
         }
     }else{
-        $AlertSign= Alert::message('veuillez remplir toutes les cases' , 'red','grey');
+        $alertSign= Alert::message('veuillez remplir toutes les cases' , 'red','grey');
     }
 }
 

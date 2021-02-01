@@ -16,7 +16,7 @@ if(isset($_GET['page']) AND !empty($_GET['page'])){
 }
 
 // array contenant toutes les pages
-// scandir retourne la liste des dossiers dans un dossier
+// scandir retourne la liste des dossiers dans un dossier  
 $allPages = scandir('controllers');
 if (in_array($page.'_controller.php',$allPages)){
     include_once 'controllers/'.$page.'_controller.php';
