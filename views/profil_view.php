@@ -10,7 +10,7 @@
             <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="<?=$getProfil['avatar'];?>" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Pseudo:<?= $getProfil['pseudi']; ?></h5>
+                <h5 class="card-title">Pseudo:<?= $getProfil['pseudo']; ?></h5>
                 <h5>Date de Naissance: <?= $getProfil['dateNaiss'];?></h5>
                 <h5>Pays :<?= $getProfil['pays'] ;?> </h5>
                 <h5></h5>
