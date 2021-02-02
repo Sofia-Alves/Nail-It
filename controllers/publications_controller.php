@@ -9,7 +9,7 @@ if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
         $titre = $_POST['titre'];
         $description = $_POST['description'];
         $error=1;
-
+        echo "erreur: ".$error;
     if($_FILES['image']['size'] <= 3000000){ //image fait moin de 3 Mo
         $infoImage = pathinfo($_FILES['image']['name']);
         $extensionImg = $infoImage['extension'];
@@ -23,6 +23,7 @@ if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
             move_uploaded_file($_FILES['image']['tmp_name'], $adress);
             $img = $_FILES['image']['tmp_name'];
             $error=0;
+            echo " erreur upload: ".$error;
             }
         }
             $publication = new Publication();
