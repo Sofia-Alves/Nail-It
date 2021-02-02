@@ -1,5 +1,4 @@
 
-<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,28 +7,22 @@
 </head>
 <body>
 
+      <section>
+        <?php foreach($showBloggeuse as $bloggeuse ): ?>
 
+        <article class="photo-card">
+          <?php foreach($showAllPublications as $publication): ?>
 
-
-
-=======
-<title> <?=ucfirst($page); ?> Publication </title>
->>>>>>> 313fae917913b504d0430cfec43628cf197e72a7
-<section>
-  <?php foreach($showBloggeuse as $bloggeuse ): ?>
-
-  <article class="photo-card">
-     <?php foreach($showAllPublications as $publication): ?>
-
-      <figure class="photo"><a href="" title=""><img src="<?= $publication['img'];?>"></a></figure>
-      <div class="avatar"><img src= "<?= $bloggeuse['avatar'];?>" alt=""></div>
-      <h3 class="author"><?= $bloggeuse['firstname'].' '.$bloggeuse['lastname'] ;?></h3>
-      <datetime class="date">Wed 9 May, 2018</datetime>
-      <p class="description"><?= $publication['description'];?></a></p>
-      <div class="like"><button>&hearts;</button></div>
-      <?php endforeach ; ?>
-      </article>
-  <?php endforeach; ?> 
-  
-</section>
-  
+            <figure class="photo"><a href="" title=""><img src="<?= $showAllPublications['img'];?>"></a></figure>
+            <div class="avatar"><img src= "<?= $showProfil['avatar'];?>" alt="avatar"></div>
+            <h3 class="author"><?= $showProfil['pseudo'] ;?></h3>
+            <datetime class="date">Wed 9 May, 2018</datetime>
+            <p class="description"><?= $showAllPublications['description'];?></a></p>
+            <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
+            <i><?= $like ?> </i>
+            <?php endforeach ; ?>
+            </article>
+        <?php endforeach; ?> 
+        
+      </section>
+        

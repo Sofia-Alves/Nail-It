@@ -3,18 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title><?= ucFirst($page); ?> Profil</title>
 </head>
 <body>
         <div class="profil">
             <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="<?=$getProfil['avatar'];?>" alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Pseudo:</h5>
-                <h5>Date de Naissance </h5>
-                <h5>Pays </h5>
+                <h5 class="card-title">Pseudo:<?= $getProfil['pseudi']; ?></h5>
+                <h5>Date de Naissance: <?= $getProfil['dateNaiss'];?></h5>
+                <h5>Pays :<?= $getProfil['pays'] ;?> </h5>
                 <h5></h5>
-                <p class="card-text">BIOGRAPHIE <br/></p>
+                <p class="card-text">BIOGRAPHIE :<br/> <?= $getProfil['biographie'];?></p>
                 <a href="#" class="btn btn-primary">Home</a>
             </div>
             </div>

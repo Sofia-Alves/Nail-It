@@ -4,9 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
-    <?php  include_once("./includes/header.php") ?>
+    
 <body>
+    <?php  include_once './includes/header.php'; ?>
 
-    <?php include_once("./includes/footer.php") ?>
+
+
+    <h1>WELCOME IN YOUR NAIL-IT NETWORK </h1>
+
+
+    <h2> Mettre le logo personnalisé ici </h2>
+
+
+
+
+    <?php include_once './includes/footer.php'; ?>
 </body>    
 </html>
