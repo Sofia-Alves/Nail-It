@@ -1,14 +1,16 @@
 <?php
 class Publication{
-    // methode pour inserer titre et description  dans table publication bdd
 
 
-    public function insertTitreDescription($title,$descrip,$adress){
+
+    public function createPublication($titre,$description,$image){
         global $db;
-        $newPub = $db -> prepare('
-        INSERT INTO publications (titre,description,img)VALUES(?,?,?)
-        ');
+        $newPub = $db ->prepare('
+        INSERT INTO publication(titre, description,img) VALUES (?, ?, ?)');
+        $newPub -> execute(array($titre,$description,$image));
     }
+
+    
     // methode pour mettre à jours l image téléchargé dans le table publication
     public function updatePublication($img, $session){
         global $db;
@@ -29,7 +31,7 @@ class Publication{
         SELECT * 
         FROM publication AS P AND bloggeuse AS,
         WHERE B.id = P.id_bloggeuse,
-        ORDER BY date DESC');
+        ');
         $allPublications ->execute();
         $getDatas =$allPublications -> fetchAll(PDO::FETCH_ASSOC);
         return $getDatas;
@@ -37,15 +39,9 @@ class Publication{
 
     /*public function createPublication($titre,$description,$img){
         global $db;
-        $updateImg = $db->prepare('
+        updateImg = $db->prepare('
         INSERT INTO publications(id_bloggeuse,titre,description,img)VALUES(?,?,?,?)
      ');
     }*/
-    public function createPublication($titre,$description,$image){
-        global $db;
-        $newPub = $db ->prepare('
-        INSERT INTO publication(titre, description,img) VALUES (?, ?, ?)');
-        $newPub -> execute(array($titre,$description,$image));
-    }
 
 }

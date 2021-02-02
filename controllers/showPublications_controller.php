@@ -1,8 +1,28 @@
 <?php
 session_start();
 
-$publication = new Publication();
-$bloggeuse = new Bloggeuse();
+include_once 'login_controller.php';
 
-$showBloggeuse = $bloggeuse -> getDatasBloggeuse($email,$firstname,$lastname,$biographie);
+ 
+$publication = new Publication();
+
+$profil= new Profil();
+
+$showProfil = $profil -> checkMyProfil($email);
+
 $showAllPublications = $publication -> getallPublications($titre,$description,$img);
+
+// ci-dessous la gestion du bouton like 
+
+if (isset($_POST['like']) && $_POST['like']=='likeIt'){
+
+    $like= $_POST['like'];
+   
+    foreach($like as $value){
+    
+        $value ++;
+        echo 'Votre publication a été liké '.$value.' fois';
+    }
+
+}
+
