@@ -15,20 +15,20 @@
         <h3> Sign Up </h3>
         <div id="firstname">
             <h4 class="entry"> First-Name :</h4>
-            <input type = "text" placeholder="FirstName" required="" name="firstname"/>
+            <input type = "text" placeholder="FirstName"  name="firstname"/>
         </div>
         <div id="lastname">
             <h4 class="entry"> Last-Name :</h4>
-            <input type = "text" placeholder="Last-Name" required="" name="lastname"/>
+            <input type = "text" placeholder="Last-Name"  name="lastname"/>
         </div>
         <div id="email">
             <h4 class="entry">E-mail:</h4>
-            <input type="email" placeholder="you email" name="email" required />
+            <input type="email" placeholder="you email" name="email"  />
 
         </div>
         <div id="password">
             <h4 class="entry">Password:</h4>
-            <input type="password" placeholder="password" name="password" required />
+            <input type="password" placeholder="password" name="password"/>
         </div>
         <div id="submit">
             <button type="submit" class="btn btn-primary" name="signup" value="done">Register</button>

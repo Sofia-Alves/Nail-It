@@ -10,11 +10,11 @@
             <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="..." alt="Card image cap">
             <div class="card-body">
-                <h5 class="card-title">Pseudo: <?=.$pseudo;?></h5>
-                <h5>Date de Naissance :<?=.$dateNaiss;?></h5>
-                <h5>Pays :<?= .$pays;?></h5>
+                <h5 class="card-title">Pseudo:</h5>
+                <h5>Date de Naissance </h5>
+                <h5>Pays </h5>
                 <h5></h5>
-                <p class="card-text">BIOGRAPHIE <br/> <?=.$biographie; ?></p>
+                <p class="card-text">BIOGRAPHIE <br/></p>
                 <a href="#" class="btn btn-primary">Home</a>
             </div>
             </div>

@@ -12,7 +12,7 @@
 </head>
 <body>
     <section class="content">
-        <form action="Nail-it/login", method="POST">
+        <form action="", method="POST">
             <h2>Nail-It</h2>
             <div class="email">
                 <label for="email">Email:</label>
@@ -32,13 +32,13 @@
     <section id="carouselExampleSlidesOnly" class= "carousel slide" data-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active" data-interval = "2000">
-                <img class="d-block w-100" src="../design/image/nail-2021.jpg" >
+                <img class="d-block w-100" src="./design/image/nail-2021.jpg" >
             </div>
             <div class="carousel-item" data-interval = "2000">
-                <img class="d-block w-100" src="../design/image/nail-paillette.jpg" >
+                <img class="d-block w-100" src="./design/image/nail-paillette.jpg" >
             </div>
             <div class="carousel-item" data-interval = "2000">
-                <img class="d-block w-100" src="../design/image/nail-freestyle.jpg">
+                <img class="d-block w-100" src="./design/image/nail-freestyle.jpg">
             </div>
         </div>
     </section>

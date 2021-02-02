@@ -14,11 +14,10 @@ if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
         $infoImage = pathinfo($_FILES['image']['name']);
         $extensionImg = $infoImage['extension'];
         $extensionsArray = array ('png','gif','jpg','jpeg'); // les extentions qu on autorise
-           
         if(in_array($extensionImg,$extensionsArray)){
 
-            $adress = '../design/uploadImg/'.time() .'.'.$extensionImg;
-            
+            $adress = './design/uploadImg/'.time() .'.'.$extensionImg;
+
             //on renome notre image avec une clé unique
             move_uploaded_file($_FILES['image']['tmp_name'], $adress);
             $img = $_FILES['image']['tmp_name'];
@@ -28,6 +27,7 @@ if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
             $publication = new Publication();
             $checkPublication = $publication->createPublication($titre,$description,$img);
    
+
     }
 }else{
     $alertPublication = Alert::message('veuillez remplir tout les champs','red','#fab0aa');

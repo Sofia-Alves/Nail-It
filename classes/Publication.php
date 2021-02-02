@@ -10,18 +10,7 @@ class Publication{
         $newPub -> execute(array($titre,$description,$image));
     }
 
-
-
-    // methode pour inserer titre et description  dans table publication bdd
-
-
-    public function insertTitreDescription($title,$descrip,){
-        global $db;
-        $newPub = $db -> prepare('
-        INSERT INTO publication(titre,description,img)VALUES(?,?,?)
-        ');
-
-    }
+    
     // methode pour mettre à jours l image téléchargé dans le table publication
     public function updatePublication($img, $session){
         global $db;
@@ -48,12 +37,11 @@ class Publication{
         return $getDatas;
     }
 
-    public function createPublication($titre,$description,$img){
+    /*public function createPublication($titre,$description,$img){
         global $db;
         updateImg = $db->prepare('
         INSERT INTO publications(id_bloggeuse,titre,description,img)VALUES(?,?,?,?)
      ');
-    }
-
+    }*/
 
 }

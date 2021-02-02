@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +12,9 @@
 
 
 
+=======
+<title> <?=ucfirst($page); ?> Publication </title>
+>>>>>>> 313fae917913b504d0430cfec43628cf197e72a7
 <section>
   <?php foreach($showBloggeuse as $bloggeuse ): ?>
 
