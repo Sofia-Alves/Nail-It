@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: sans-serif;
+    background: #eee;
+  
+  }
+  
+  section {
+    max-width: 860px;
+  }
+  
+  figure {
+    margin: 0;
+  }
+  
+  
+  
+  .photo {
+    grid-area: photo;
+  }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+  
+  
+  .avatar {
+    grid-area: avatar;
+  }
+    img {
+      border-radius: 50%;
+    }
+  
+  
+  .author {
+    grid-area: author;
+    margin: 0;
+  }
+  
+  .description {
+    grid-area: description;
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  .date {
+    grid-area: date;
+    color: #767676;
+    font-size: small;
+  }
+  
+  /*.like {
+    grid-area: like;
+    padding-bottom: $base-padding;
+    text-align: right;
+  }*/
+  
+  .author, 
+  .date {
+    display: flex;
+    align-self: center;
+  }
+  
+  

@@ -12,7 +12,7 @@ class Publication{
 
     
     // methode pour mettre à jours l image téléchargé dans le table publication
-    public function updatePublication($img, $session){
+    /*public function updatePublication($img, $session){
         global $db;
         $putImage = $db ->prepare('
         UPDATE publication
@@ -20,21 +20,28 @@ class Publication{
         FROM publication AS P ,bloggeuse AS B,
         WHERE P.id_bloggeuse = B.id ');
         $putImage ->execute(array($img,$session));
-    }
+    }*/
 
     // fonction qui retourne toutes les publications 
 
-    public function getallPublications($titre,$description,$img,$session){
+    public function getallPublications($titre,$description,$img){
         global $db;
 
         $allPublications =$db -> prepare('
         SELECT * 
-        FROM publication AS P AND bloggeuse AS,
-        WHERE B.id = P.id_bloggeuse,
-        ');
+        FROM publication 
+       ');
         $allPublications ->execute();
         $getDatas =$allPublications -> fetchAll(PDO::FETCH_ASSOC);
         return $getDatas;
+    }
+    public function getMyPublication($titre,$description,$img,$session){
+        global $db;
+        $myPublication=$db -> prepare ('
+        SELECT * FROM publication');
+        $myReq ->execute(array($session));
+        $getReq =$myReq-> fetchAll(PDO::FETCH_ASSOC);
+        return $getReq;
     }
 
     /*public function createPublication($titre,$description,$img){
