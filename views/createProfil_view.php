@@ -6,7 +6,7 @@
     <title><?= ucFirst($page);?>Créer-Profil</title>
 </head>
 <body>
-    <header> <?php include_once '../includes/header.php'; ?></header>
+    <?php include_once './includes/header.php'; ?>
     <main>
        
             <h1>Créer votre profil</h1>
@@ -23,14 +23,22 @@
             <div class="pays">
                 <label for="pays">Pays :</label>
                 <select name="pays" id="pays" required>
-                    <option value="France">France</option>
-                    <option value="USA">USA</option>
-                    <option value="Italie">Italie</option>
-                    <option value="Espagne">Espagne</option>
-                    <option value="Algerie">Algerie</option>
-                    <option value="Maroc">Maroc</option>
-                    <option value="Tunisie">Tunisie</option>
-                    <option value="Liban">Liban</option>
+                <option value="pays">
+                <script>
+                fetch('../countries.json')
+                    .then(function(data){
+                        console.log(data);
+            
+                        data.forEach(element => {
+                          
+                            
+                        });
+
+                        }
+                    })
+
+                </script>
+                </option>
                 </select>
             </div>
             <div class="biographie">
@@ -51,6 +59,6 @@
         </div>
     </main>
 
-    
+    <?php include_once './includes/footer.php'; ?>
 </body>
 </html>
