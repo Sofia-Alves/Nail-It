@@ -23,22 +23,14 @@
             <div class="pays">
                 <label for="pays">Pays :</label>
                 <select name="pays" id="pays" required>
-                <option value="pays">
-                <script>
-                fetch('../countries.json')
-                    .then(function(data){
-                        console.log(data);
-            
-                        data.forEach(element => {
-                          
-                            
-                        });
-
-                        }
-                    })
-
-                </script>
-                </option>
+                    <option value="France">France</option>
+                    <option value="USA">USA</option>
+                    <option value="Italie">Italie</option>
+                    <option value="Espagne">Espagne</option>
+                    <option value="Algerie">Algerie</option>
+                    <option value="Maroc">Maroc</option>
+                    <option value="Tunisie">Tunisie</option>
+                    <option value="Liban">Liban</option>
                 </select>
             </div>
             <div class="biographie">

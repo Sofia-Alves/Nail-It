@@ -1,6 +1,16 @@
 
-<?php include_once './classes/Bloggeuse.php'; ?>
-<?php include_once './classes/Publication.php'; ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <?php include_once 'includes/head.php';?>
+    <title> <?= ucFirst($page); ?> Publication</title>
+</head>
+<body>
+
+
+
+
+
 <section>
   <?php foreach($showBloggeuse as $bloggeuse ): ?>
 
@@ -14,7 +24,8 @@
       <p class="description"><?= $publication['description'];?></a></p>
       <div class="like"><button>&hearts;</button></div>
       <?php endforeach ; ?>
-  </article>
+      </article>
   <?php endforeach; ?> 
+  
 </section>
   

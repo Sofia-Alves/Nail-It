@@ -26,7 +26,7 @@ if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
             }
         }
             $publication = new Publication();
-            $checkPublication = $publication->createPublication($titre,$description,$adress);
+            $checkPublication = $publication->createPublication($titre,$description,$img);
    
     }
 }else{

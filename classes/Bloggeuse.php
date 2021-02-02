@@ -6,7 +6,8 @@ class Bloggeuse{
     public function createBloggeuse($firstname , $lastname, $email, $password){
         global $db; 
         $newBloggeuse = $db ->prepare('
-        INSERT INTO bloggeuse(firstname,lastname,email,password) VALUES (?, ?, ?, ?)');
+        INSERT INTO bloggeuse(firstname,lastname,email,password,avatar) VALUES (?, ?, ?, ?, ?)');
+        $newBloggeuse -> execute(array($firstname,$lastname,$email,$password));
     }
 
     //fonction pour verifier si mail existe deja (retourne un bool (0/1))
@@ -32,11 +33,8 @@ class Bloggeuse{
         WHERE email= ?
         AND password= ?
         ');
-        echo '$email'.$email;
-        echo '$pass'.$pass;
         $reqDatas->execute(array($email,$pass));
-        $dataExists = $reqDatas->rowCount();
-        echo '$dataExists'.$dataExists;
+        $datasExists = $reqDatas->rowCount();// boolean 
         return $dataExists;
     }
 
@@ -51,5 +49,13 @@ class Bloggeuse{
        $req = $bloggeuse -> fetch(PDO::FETCH_ASSOC);
        return $req ;
    }
+
+   
+
+
+
+
+  
+
     
 }
