@@ -10,19 +10,25 @@ $profil= new Profil();
 
 $showProfil = $profil -> checkMyProfil($email);
 
-$showAllPublications = $publication -> getallPublications($titre,$description,$img);
+$showMyPublication = $publication-> getMyPublication($titre,$description,$img,$email);
+
+$showAllPublications = $publication -> getAllPublications($titre,$description,$img);
 
 // ci-dessous la gestion du bouton like 
 
-if (isset($_POST['like']) && $_POST['like']=='likeIt'){
 
-    $like= $_POST['like'];
-   
-    foreach($like as $value){
+//if (isset($_GET['like']) && $_GET['like']=='likeIt'){
+
+
+    //$like= $_GET['like'];
+    $_SESSION['like'] = 0;
     
-        $value ++;
-        echo 'Votre publication a été liké '.$value.' fois';
-    }
+    if(isset($_GET['like']) && $_GET['like']=='likeIt'){
+       $like= $_SESSION['like']+1;
 
-}
+    }
+     
+
+
+
 
