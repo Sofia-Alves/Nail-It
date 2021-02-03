@@ -28,13 +28,11 @@ body{
 }
 
 /**** HEADER ****/
-header{
-    
-}
+
 
 /**** FOOTER ****/
 
- footer {
+ footer, header {
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -68,7 +68,7 @@ body{
 }
 
 .card3:hover {
-    background: url(.image/LeaPhoto.jpg)left center no-repeat;
+    background: url(./image/LeaPhoto.jpg)left center no-repeat;
     background-size: 600px;
 }
 

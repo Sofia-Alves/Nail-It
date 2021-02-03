@@ -1,7 +1,4 @@
 <header class= "header">
-    <div class="flex-footer">
-    <!-- LOGO HERE -->
-    <img src="" alt="logo">
         <nav>
             <form action="">
             <input type="text-area" placeholder="search">

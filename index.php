@@ -9,6 +9,7 @@ include_once 'classes/Alert.php';
 include_once 'classes/Bloggeuse.php';
 include_once 'classes/Publication.php';
 include_once 'classes/Nails.php';
+include_once 'classes/Profil.php';
 
 if(isset($_GET['page']) AND !empty($_GET['page'])){
     $page = trim(strtolower($_GET['page']));
