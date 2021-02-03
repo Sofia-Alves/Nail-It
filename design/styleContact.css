@@ -33,42 +33,42 @@ body{
 }
 
 .card0{
-    background: url(/design/image/LéaPhoto.jpg)center center no-repeat;
+    background: url(./image/LeaPhoto.jpg)center center no-repeat;
     background-size: 300px;
 }
 
 .card0:hover {
-    background: url(/design/image/LéaPhoto.jpg)left center no-repeat;
+    background: url(./image/LeaPhoto.jpg)left center no-repeat;
     background-size: 600px;
 }
 
 .card1{
-    background: url(/design/image/LéaPhoto.jpg)center center no-repeat;
+    background: url(./image/LeaPhoto.jpg)center center no-repeat;
     background-size: 300px;
 }
 
 .card1:hover {
-    background: url(/design/image/LéaPhoto.jpg)left center no-repeat;
+    background: url(./image/LeaPhoto.jpg)left center no-repeat;
     background-size: 600px;
 }
 
 .card2{
-    background: url(/design/image/LéaPhoto.jpg)center center no-repeat;
+    background: url(./image/LeaPhoto.jpg)center center no-repeat;
     background-size: 300px;
 }
 
 .card2:hover {
-    background: url(/design/image/LéaPhoto.jpg)left center no-repeat;
+    background: url(./image/LeaPhoto.jpg)left center no-repeat;
     background-size: 600px;
 }
 
 .card3{
-    background: url(/design/image/LéaPhoto.jpg)center center no-repeat;
+    background: url(./image/LeaPhoto.jpg)center center no-repeat;
     background-size: 300px;
 }
 
 .card3:hover {
-    background: url(/design/image/LéaPhoto.jpg)left center no-repeat;
+    background: url(.image/LeaPhoto.jpg)left center no-repeat;
     background-size: 600px;
 }
 

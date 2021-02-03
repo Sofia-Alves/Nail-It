@@ -34,7 +34,7 @@ class Bloggeuse{
         AND password= ?
         ');
         $reqDatas->execute(array($email,$pass));
-        $datasExists = $reqDatas->rowCount();// boolean 
+        $dataExists = $reqDatas->rowCount();// boolean 
         return $dataExists;
     }
 

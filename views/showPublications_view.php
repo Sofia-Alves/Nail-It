@@ -9,33 +9,39 @@
 <body>
     <?php include_once './includes/header.php'; ?>
     <main>
-      <div class="card" style="width: 40rem;">
-          <img class="card-img-top" src="..." alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
-            <i><?php echo 'votre publication a été liké '. $like.' fois!'; ?> </i>
-          </div>
-        </div>
-
-      <section>
-       <article class="photo-card">
-          <?php foreach($showAllPublications as $publi): ?>
-
-
-            <figure class="photo"><a href="profil_view.php" title=""><img src="<?= $publi['img'];?>"></a></figure>
-            <div class="avatar"><img src= "<?= $showProfil['avatar'];?>" alt="avatar"></div>
-            <h3 class="author"><?= $showProfil['pseudo'] ;?></h3>
-            <datetime class="date">Wed 9 May, 2018</datetime>
-            <p class="description"><?= $publi['description'];?></a></p>
-            <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
-            <i><?= $like ?> </i>
-            
-        <?php endforeach; ?> 
-        </article>
-        
+    <section class="publications">
+        <div class="my-publication">
+        <?php foreach($showMyPublication as $publi): ?>
+            <div class="card" style="width: 40rem;">
+                <img class="card-img-top" src="<?= $publi['img'];?>" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title"><?= $publi['titre'];?></h5>
+                  <p class="card-text"><?= $publi['description'];?></p>
+                  <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
+                  <i><?php echo 'votre publication a été liké '. $like.' fois!'; ?> </i>
+                </div>
+              </div>
+           <?php endforeach; ?>
+           </div>
       </section>
+      <section class="publications">
+         <div class="all-publications">
+          <?php foreach($showAllPublications as $publi): ?>
+                    <div class="all-publication">
+                      <div class="card" style="width: 40rem;">
+                          <img class="card-img-top" src="<?=$publi['img'];?>" alt="Card image cap">
+                          <div class="card-body">
+                            <h5 class="card-title"><?= $publi['titre'];?> </h5>
+                            <p class="card-text"><?= $publi['description'];?></p>
+                            <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
+                            <i><?php echo 'votre publication a été liké '. $like.' fois!'; ?> </i>
+                          </div>
+                        </div>
+                    </div>
+
+         <?php endforeach; ?> 
+       </div>
+       </section> 
 
 
       </main>

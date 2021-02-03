@@ -6,7 +6,7 @@
     <title>Page Contact</title>
     <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
-    <link type="text/css" rel="stylesheet" href="../design/styleContact.css">
+    <link rel="stylesheet" type="text/css" href="../design/styleContact.css?<?php echo time(); ?>" /> 
 </head>
 <body>
     <div class="card card0">

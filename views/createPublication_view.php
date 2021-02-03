@@ -6,8 +6,8 @@
     <title><?= ucFirst($page)?>Créer publication</title>
 </head>
 <body>
- <?php include_once 'includes/header.php';?>
-       <h1>Créér votre propre publication</h1> 
+ <?php include 'includes/header.php';?>
+       <h1>Nouvelle publication</h1> 
     <div class="container">
             
           <h2>Veuillez inserer votre photo et Rajouter son titre et sa description </h2>
