@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-   <?php include_once 'includes/head.php';?>
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= ucFirst($page)?>Créer publication</title>
 </head>
 <body>

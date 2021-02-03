@@ -19,6 +19,7 @@ if(isset($_POST['signup']) && $_POST['signup']=='done'){
         }else{
             $newBloggeuse = $bloggeuse -> createBloggeuse($firstname,$lastname,$email, $password);
             $alertSign= Alert::message('You registered successfully','white','green');
+            $accesHome = "<a href='./home'><img src='./design/image/user.png' ></a>";
             echo "register done";
         }
     }else{

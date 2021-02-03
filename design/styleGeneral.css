@@ -2,12 +2,29 @@
     --lila: rgb(209, 174, 255);
 }
 
+@font-face{
+	font-family: lato regular;
+	src: url(./font/Lato-Regular.ttf);
+}
+
+@font-face{
+	font-family: lato thin;
+	src:url(./font/lato-light-webfont.woff2);
+}
+
 *{
-	box-sizing: border-box;
+    box-sizing: border-box;  
 	padding-top: none;
     padding-bottom: none;
     margin:0;
-	padding:0;
+    padding:0;
+    font-family: lato regular;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /**** HEADER ****/
@@ -22,6 +39,7 @@ header{
     flex-direction: column;
     align-items: center;
     border-top: 1px solid gray;
+    height:5em;
     color: gray;
 }
 
@@ -51,4 +69,72 @@ a{
 
 a:hover{
     color: var(--lila);
+}
+
+/**** LOGIN/ SIGNUP ****/
+.content{
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 2em;
+    margin:2em;
+    padding:1em;
+    width: 40%;
+    background-color: rgb(255, 255, 255, 0.2) ;
+    z-index :1;
+}
+
+.log{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2{
+    font-family: lato thin;
+    color: var(--lila);
+}
+
+/* text areas*/
+input{
+    border:1px solid gray;
+    border-radius: 0.2em;
+    margin:0.5em 0em 0.5em 0em;
+}
+
+::placeholder {
+    font-family: lato thin;
+    color: gray;
+}
+
+input:focus{
+    outline: none;
+    box-shadow: 0 0 0 2px var(--lila);
+    border-color: var(--lila);
+    border-radius: 0.2em;
+}
+
+input:focus::-webkit-input-placeholder { 
+    color: var(--lila); 
+}
+
+button, .btn{
+    border: 1px solid var(--lila);
+    background-color: var(--lila);
+    color: white;
+    border-radius: 0.2em; ;
+    padding: 0.1em 0.5em 0.1em 0.5em;
+}
+
+button:hover, .btn:hover{
+    color: var(--lila);
+    border :1px solid var(--lila);
+   background-color: white;
+}
+
+.noAccount{
+    margin-top: 1em;
+    font-family: lato thin;
+}
+.carousel{
+    z-index: 2;
 }
