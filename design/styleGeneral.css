@@ -29,6 +29,9 @@ body{
 }
 
 /**** HEADER ****/
+nav{
+    margin-right:-20px;
+}
 .menu_header{
     position: sticky;
     position: -webkit-sticky;
@@ -38,6 +41,7 @@ body{
     margin-top: 0.2em;
     border-bottom: 1px solid grey;
     border-width: 100%;
+    
 }
 
 .search{
@@ -46,12 +50,35 @@ body{
 
 .icone{
     width: 20%;
-}
-.icone:hover{
-    width: 25%;
+
+
 }
 
-.tootiptext{
+    div.click-to-top {
+    display:inline-block;
+    position:relative;
+    }
+    
+    div.click-to-top:hover{
+    z-index:9;
+    }
+    
+    div.click-to-top img{
+    -webkit-transition: all 0.8s;
+    moz-transition: all 0.8s;
+    transition: all 0.8s;
+    width:47%;
+   
+    }
+    
+    div.click-to-top img:hover{
+    z-index:9;
+    }
+    
+    div.click-to-top span {display: none; position: absolute; background: grey; color: #fff; }
+    div.click-to-top:hover span {display: block; }
+
+/* .tootiptext{
     visibility: hidden;
     position: absolute;
     z-index: 1;
@@ -59,7 +86,7 @@ body{
 .tootiptext:hover{
     visibility: visible;
     color: var(--lila);
-}
+} */
 
 /**** FOOTER ****/
 
