@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 <footer class = "footer">
 
     <h2 id="copyright"> All credits to Nail It &copy</h2>
@@ -9,4 +10,11 @@
             <li class="footerMenu"><a href="index.php?page=contact">Contact</a></li>
         </ul>
     </nav> 
+=======
+<footer>
+    <nav class="menu">
+        <a href="./views/contact_view.php">Contact</a>
+    </nav>
+    <h2 id="copyright"> All credits to Nail It &copy</h2>   
+>>>>>>> c8570acf70e90d8625a1ad6145088976f577e5dc
 </footer>

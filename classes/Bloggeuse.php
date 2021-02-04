@@ -7,7 +7,6 @@ class Bloggeuse{
         global $db; 
         $newBloggeuse = $db ->prepare('
         INSERT INTO bloggeuse(firstname,lastname,email,password) VALUES (?, ?, ?, ?)');
-
         $newBloggeuse -> execute(array($firstname,$lastname,$email,$password));
     }
 
@@ -35,8 +34,13 @@ class Bloggeuse{
         AND password= ?
         ');
         $reqDatas->execute(array($email,$pass));
+<<<<<<< HEAD
         $datasExists = $reqDatas->rowCount();// boolean 
         return $datasExists;
+=======
+        $dataExists = $reqDatas->rowCount();// boolean 
+        return $dataExists;
+>>>>>>> c8570acf70e90d8625a1ad6145088976f577e5dc
     }
 
    // fonction pour recuperer les info du tableau bloggeuse en BDD

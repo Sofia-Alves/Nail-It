@@ -1,0 +1,170 @@
+CREATE TABLE produits (
+  id_produit int(11) NOT NULL,
+  nom varchar(255) NOT NULL,
+  description text NOT NULL,
+  prix float NOT NULL,
+  categorie int(2) NOT NULL,
+  image varchar(255) NOT NULL,
+  propriétaire varchar(255) NOT NULL
+)
+
+INSERT INTO `produits` (`id_produit`, `nom`, `description`, `prix`, `categorie`, `image`, `propriétaire`) VALUES
+(1, 'bonnet', 'bonnet noir Unisexe :I LOVE NAILS', 12, 3, '../design/products/bonnet.jpg', 'Alex'),
+(2, 'Cup Jaune', 'Cup June , I love Nails', 10, 3, '../design/products/cupyellow.jpg', 'Angelina'),
+(3, 'doudou', 'doudou I love Nails', 20, 3, '../design/products/doudou.jpg', 'lady'),
+(4, 'cup', 'cup blanc avec design I love nails', 10, 3, '../design/products/cup.jpg', 'sofia'),
+(5, 't-shirt', 't-shirt noir pour femme : design I love Nails', 25, 3, '../design/products/tchirt.jpg', 'Sarah'),
+(6, 'smoothie Cup', 'a smoothie cup transparent 0,5l avec design I LOVE NAILS', 14, 3, '../design/products/smoothie.jpg', 'râbèb'),
+(7, 'tablier de cuisine', 'tablier de cuisine noir unisexe, design I LOVE NAILS', 18, 3, '../design/products/kitchen.jpg', 'alia'),
+(8, 'USA Nails', 'nails design USA ( lot de 12)', 6, 2, '../design/products/usanails.jpeg', 'mimi'),
+(9, 'berbere Nails', 'design Nails motif Berbère (lot de 24)', 12, 2, '../design/products/berbere.jpg', 'Julie'),
+(10, 'soft Nails', 'motif nails Soft (lot de 12)', 6, 2, '../design/products/soft.jpeg', 'samia'),
+(11, 'Pink Nails', 'des Nails à motifs roses très girly ;)\r\nlot de 12 ', 8, 2, '../design/products/motifRose.jpg', 'lea'),
+(12, 'gothic Nails', 'Gothic Nails : Hard Rock style', 12, 2, '../design/products/gothic.jpeg', 'eva'),
+(13, 'hawaïen Nails', 'nails motif hawaii (lot de 24)', 10, 2, '../design/products/motifHawaii.jpg', 'melissa'),
+(14, 'smilies Nails', 'des nails cool Smilies pour Fun\r\nlot de 24', 6, 2, '../design/products/smilies.jpg', 'jessusa'),
+(15, 'sexy red nails', 'lot de 24 sexy red Nails :\r\nGarantis 100 % Glamour & Chic', 20, 2, '../design/products/girly.jpg', 'Zohra'),
+(16, 'vernis Chanel Pastel', 'vernis a ongles couleur pastels , marque CHANEL ', 18, 1, '../design/products/chanelVernis.jpeg', 'Lyly'),
+(17, 'vernis Yves-Saint-Laurent', 'vernis Rouge de la marque Yves-Saint-Laurennt\r\nprix de stockage !!!', 14, 1, '../design/products/vernis-YSL.jpeg', 'soso'),
+(18, 'Vernis Nude', 'vernis NUDE de marque Nocibé..\r\n\r\n', 10, 1, '../design/products/nocibé.jpeg', 'mymy'),
+(19, 'vernis trois couleurs', 'lot de trois couleurs pastels de vernis a ongle , longues tenues', 19, 1, '../design/products/lot3vernis.jpeg', 'jiji'),
+(20, 'vernis OPI', 'vernis professionnel de la marque O-P-I \r\ntrès longues tenus et couleur poudré', 12, 1, '../design/products/opiVernis.jpeg', 'Hakima'),
+(21, 'vernis Violet', 'vernis a ongles prix cassé !!! marque américaine de très bonne qualité', 5, 1, '../design/products/violetVernis.jpeg', 'Jennifer');
+
+-- phpMyAdmin SQL Dump
+-- version 4.9.5
+-- https://www.phpmyadmin.net/
+--
+-- Hôte : localhost:8889
+-- Généré le : mer. 03 fév. 2021 à 14:10
+-- Version du serveur :  5.7.30
+-- Version de PHP : 7.3.21
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données : `nailIt`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `bloggeuse`
+--
+
+CREATE TABLE `bloggeuse` (
+  `id` int(11) NOT NULL,
+  `firstname` varchar(25) NOT NULL,
+  `lastname` varchar(35) NOT NULL,
+  `email` varchar(35) NOT NULL,
+  `password` varchar(60) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `bloggeuse`
+--
+
+INSERT INTO `bloggeuse` (`id`, `firstname`, `lastname`, `email`, `password`) VALUES
+(1, 'Angelina', 'Jolie', 'angelina@jolie.fr', 'befa1a4282e6d0f62d0577e85ea75c00c4963196'),
+(2, 'Lady', 'Gaga', 'lady@gaga.fr', '5c05775c9d03cfa3c9602be0bb9684ad41c91bc9'),
+(3, 'lea', 'hamzi', 'lea@hamzi.fr', '55f63a97aee05dec574284677eb868c83b3fba7c'),
+(6, 'alex', 'soulis', 'alex@soulis.fr', '60c6d277a8bd81de7fdde19201bf9c58a3df08f4'),
+(7, 'Rabeb', 'Brahim', 'rabeb@brahim.fr', '99d470b30d42dc785bcf9a8bee02e03dde9ac272');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `profil`
+--
+
+CREATE TABLE `profil` (
+  `idBloggeuse` int(11) NOT NULL,
+  `biography` varchar(255) DEFAULT NULL,
+  `avatar` varchar(255) DEFAULT NULL,
+  `birth` date DEFAULT NULL,
+  `pays` varchar(255) DEFAULT NULL,
+  `pseudo` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `publications`
+--
+
+CREATE TABLE `publications` (
+  `idPubli` int(11) NOT NULL,
+  `idBloggeuse` int(11) NOT NULL,
+  `titre` varchar(100) NOT NULL,
+  `description` varchar(255) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL,
+  `postedOn` datetime NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Index pour les tables déchargées
+--
+
+--
+-- Index pour la table `bloggeuse`
+--
+ALTER TABLE `bloggeuse`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `email` (`email`);
+
+--
+-- Index pour la table `profil`
+--
+ALTER TABLE `profil`
+  ADD PRIMARY KEY (`idBloggeuse`),
+  ADD UNIQUE KEY `pseudo` (`pseudo`);
+
+--
+-- Index pour la table `publications`
+--
+ALTER TABLE `publications`
+  ADD PRIMARY KEY (`idPubli`),
+  ADD KEY `idBloggeuse` (`idBloggeuse`);
+
+--
+-- AUTO_INCREMENT pour les tables déchargées
+--
+
+--
+-- AUTO_INCREMENT pour la table `bloggeuse`
+--
+ALTER TABLE `bloggeuse`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT pour la table `publications`
+--
+ALTER TABLE `publications`
+  MODIFY `idPubli` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- Contraintes pour les tables déchargées
+--
+
+--
+-- Contraintes pour la table `profil`
+--
+ALTER TABLE `profil`
+  ADD CONSTRAINT `profil_ibfk_1` FOREIGN KEY (`idBloggeuse`) REFERENCES `publications` (`idBloggeuse`);
+
+--
+-- Contraintes pour la table `publications`
+--
+ALTER TABLE `publications`
+  ADD CONSTRAINT `publications_ibfk_1` FOREIGN KEY (`idBloggeuse`) REFERENCES `bloggeuse` (`id`);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

@@ -1,12 +1,21 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
+<<<<<<< HEAD
 
    
 
     <?php include_once './includes/head.php';?>
     <title><?=ucFirst($page) ?> Page Contact</title>
     
+=======
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Contact</title>
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="../design/styleContact.css?<?php echo time(); ?>" /> 
+>>>>>>> c8570acf70e90d8625a1ad6145088976f577e5dc
 </head>
 <body>
     <div class="card card0">
