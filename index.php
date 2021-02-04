@@ -4,11 +4,12 @@
 // elle va servir comme un router pour les autre pages 
 // inclure toute les classes a la fin du projet 
 
-include_once 'settings/database.php';
-include_once 'classes/Alert.php';
-include_once 'classes/Bloggeuse.php';
-include_once 'classes/Publication.php';
-include_once 'classes/Nails.php';
+include_once './settings/database.php';
+include_once './classes/Alert.php';
+include_once './classes/Bloggeuse.php';
+include_once './classes/Publication.php';
+include_once './classes/Profil.php';
+include_once './classes/Nails.php';
 
 if(isset($_GET['page']) AND !empty($_GET['page'])){
     $page = trim(strtolower($_GET['page']));

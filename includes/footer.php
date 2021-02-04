@@ -6,7 +6,7 @@
         <ul class="menu">
             <li class="footerMenu"><a href="#">Home</a></li>
             <li class="footerMenu"><a href="#">About</a></li>
-            <li class="footerMenu"><a href="#">Contact</a></li>
+            <li class="footerMenu"><a href="index.php?page=contact">Contact</a></li>
         </ul>
     </nav> 
 </footer>

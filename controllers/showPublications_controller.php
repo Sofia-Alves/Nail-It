@@ -9,10 +9,11 @@ $publication = new Publication();
 $profil= new Profil();
 
 $showProfil = $profil -> checkMyProfil($email);
+//var_dump($showProfil);
 
-$showMyPublication = $publication-> getMyPublication($titre,$description,$img,$email);
-
-$showAllPublications = $publication -> getAllPublications($titre,$description,$img);
+$showMyPublication = $publication-> getMyPublication($email);
+var_dump($showMyPublication);
+$showAllPublications = $publication -> getAllPublications();
 
 // ci-dessous la gestion du bouton like 
 

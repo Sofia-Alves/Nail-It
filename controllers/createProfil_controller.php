@@ -23,6 +23,7 @@ if(isset($_POST['profil']) && $_POST['profil']=='enregistrer'){
                 $avatar = $_FILES['avatar']['tmp_name'];
                 $error=0;
                 }
+                var_dump($avatar);
             }
         $profil=new Profil();
         $newProfil=$profil->createProfil($pseudo,$dateNaiss,$pays,$biographie,$avatar);

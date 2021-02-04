@@ -36,7 +36,7 @@ class Bloggeuse{
         ');
         $reqDatas->execute(array($email,$pass));
         $datasExists = $reqDatas->rowCount();// boolean 
-        return $dataExists;
+        return $datasExists;
     }
 
    // fonction pour recuperer les info du tableau bloggeuse en BDD
@@ -46,8 +46,8 @@ class Bloggeuse{
        global $db;
        $bloggeuse = $db -> prepare('
        SELECT * FROM blogeuse WHERE email = ?');
-       $bloggeuse ->execute(array($email));
-       $req = $bloggeuse -> fetch(PDO::FETCH_ASSOC);
+       $bloggeuse -> execute(array($email));
+       $req = $bloggeuse -> fetchAll(PDO::FETCH_ASSOC);
        return $req ;
    }
 

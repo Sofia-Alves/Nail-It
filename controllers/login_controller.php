@@ -1,5 +1,5 @@
 <?php 
-session_start();
+//session_start();
 
 // Authentication
 if(isset($_POST['login']) && $_POST['login']=='done'){
@@ -24,7 +24,7 @@ if(isset($_POST['login']) && $_POST['login']=='done'){
             $_SESSION['password']=$sessionPass;
             $_SESSION['email']=$email;
             echo "test";
-            header('Location:/Nail-it/home');
+            header('Location:index.php?page=home');
             //problème avec le header, ne redirige pas vers la page: header permet pas
             //de passer vers le mécanisme MVC => pas la bonne méthode. trouver autre chose 
             //rootage fonctionnelle. 
