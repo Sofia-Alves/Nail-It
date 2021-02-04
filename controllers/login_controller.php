@@ -1,5 +1,5 @@
 <?php 
-//session_start();
+session_start();
 
 // Authentication
 if(isset($_POST['login']) && $_POST['login']=='done'){

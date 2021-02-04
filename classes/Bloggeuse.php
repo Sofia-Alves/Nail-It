@@ -45,10 +45,23 @@ class Bloggeuse{
    public function getDatasBloggeuse($email){
        global $db;
        $bloggeuse = $db -> prepare('
-       SELECT * FROM blogeuse WHERE email = ?');
+       SELECT * FROM bloggeuse WHERE email = ?');
        $bloggeuse -> execute(array($email));
        $req = $bloggeuse -> fetchAll(PDO::FETCH_ASSOC);
        return $req ;
+   }
+
+   // fonction pour recuperer l id du bloggeuse
+
+   public function getIdBloggeuse($email){
+       global $db;
+       $idB=$db ->prepare('
+       SELECT id_bloggeuse 
+       FROM bloggeuse,
+       WHERE email =?');
+       $idB->execute(array($email));
+       $data = $idB ->fetch();
+       return $data;
    }
 
    

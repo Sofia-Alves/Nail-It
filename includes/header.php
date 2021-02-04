@@ -1,15 +1,16 @@
+
 <header>
 <div class="menu-top">
     
     <!-- LOGO HERE -->
-    <div id="logo"><img src="./design/logo/logo.png" alt="logo"></div>
-        <?php if(isset($_SESSION['nom']) && isset($_SESSION['prenom'])) : ?>
-            <a href="#" class="welcome"><span >Welcome back, <?php echo $_SESSION['prenom']; ?></span></a>
+    <div id="logo" style="height:20px;width:30px;"><img src="./design/logo/logo.png" alt="logo"></div>
+        <?php if(isset($_SESSION['firstname']) && isset($_SESSION['lastname'])) : ?>
+            <a href="#" class="welcome"><span >Welcome back, <?php echo $_SESSION['firstname']; ?></span></a>
         <?php endif; ?>
         <?php if(isset($_SESSION['firstname']) && isset($_SESSION['lastname'])) : ?>
             
             
-            <a class="dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuLink" href="#" role="button" >Mes infos</a>
+            <a class="dropdown dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownMenuLink" href="#" role="button" >MENU</a>
             <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <li><a class="dropdown-item" href="index.php?page=profil">Mon Profil</a></li>
                     <li><a class="dropdown-item" href="index.php?page=showpublications">Mes Publications</a></li>

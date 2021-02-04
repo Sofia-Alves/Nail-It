@@ -33,7 +33,8 @@
                             <h5 class="card-title"><?= $publi['titre'];?> </h5>
                             <p class="card-text"><?= $publi['description'];?></p>
                             <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
-                            <i><?php echo 'votre publication a été liké '. $like.' fois!'; ?> </i>
+                            <script type/></script>
+                          
                           </div>
                         </div>
                     </div>

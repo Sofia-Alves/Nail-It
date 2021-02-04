@@ -2,7 +2,7 @@
 session_start();
 
 //Envoi du formulaire contenant le titre et le description en text aria  et l image 
-
+include_once './login_controller.php';
 
 if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
     if(!empty($_POST['titre']) && !empty($_POST['description']) && isset($_FILES['image']) && $_FILES['image']['error'] == 0){
@@ -26,7 +26,9 @@ if(isset($_POST['publication']) && $_POST['publication'] == 'addPublication' ){
             }
         }
             $publication = new Publication();
-            $checkPublication = $publication->createPublication($titre,$description,$img);
+            $bloggeuse= new Bloggeuse;
+            $id = $bloggeuse ->getIdBloggeuse($email);
+            $checkPublication = $publication->createPublication($id,$titre,$description,$img);
    
 
     }

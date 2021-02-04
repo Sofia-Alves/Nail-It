@@ -7,7 +7,8 @@
 <body>
 <?php include_once './includes/header.php';?>
 <div class="row mt-5" style="border-bottom:1px solid lightgrey;display:flex;justify-content:center;padding-left:50px;">
-     <h2>Vernis</h2>
+     <div class="vernis"style="font-size:60px;text-align:center;margin-bottom:20px;font-family:cursive;border-bottom: 3px solid black;">Les Vernis</div>
+       
                <?php foreach($vernis as $produit) : ?>
                     <div class="col-sm">
                     <div class="card mb-3" style="width: 18rem;">
@@ -24,7 +25,7 @@
                <?php endforeach; ?>
      </div>
      <div class="row mt-5" style="border-bottom:1px solid lightgrey;display:flex;justify-content:center;padding-left:50px;">
-     <h2>Design Tools</h2>
+     <div class="design"style="font-size:60px;text-align:center;margin-bottom:20px;font-family:cursive;border-bottom: 3px solid black;">Design-Tools</div>
                <?php foreach($designNail as $produit) : ?>
                     <div class="col-sm">
                     <div class="card mb-3" style="width: 18rem;">
@@ -33,7 +34,7 @@
                                    <h5 class="card-title"><?= $produit['nom']; ?><span class="productPrice"> - <?php echo number_format($produit['prix'],2); ?>€</span></h5>
                                    
                                    <p class="card-text"><?= $produit['description']; ?></p>
-                                   <a href="index.php?page=detail&voir=<?= $produit['id_produit']; ?>" class="btn btn-primary">voir le produit</a>
+                                   <a href="index.php?page=detailnails&voir=<?= $produit['id_produit']; ?>" class="btn btn-primary">voir le produit</a>
                                    
                               </div>
                          </div>
@@ -41,7 +42,7 @@
                <?php endforeach; ?>
      </div>
      <div class="row mt-5" style="border-bottom:1px solid lightgrey;display:flex;justify-content:center;padding-left:50px;">
-     <h2>Gadgets</h2>
+     <div class="gadgets"style="font-size:60px;text-align:center;margin-bottom:20px;font-family:cursive;border-bottom: 3px solid black;">Gadgets</div>
                <?php foreach($gadgets as $produit) : ?>
                     <div class="col-sm">
                     <div class="card mb-3" style="width: 18rem;">

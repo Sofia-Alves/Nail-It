@@ -1,3 +1,5 @@
 <?php 
-echo "home";
+session_start();
+
+
 ?>

@@ -2,6 +2,22 @@
 session_start();
 
 include_once 'login_controller.php';
+  
+
+
+
+
+$like=0;
+
+if(isset($_GET['like']) && $_GET['like']=='likeIt'){
+    $like++;
+   
+   }
+
+
+
+   
+   
 
  
 $publication = new Publication();
@@ -12,22 +28,18 @@ $showProfil = $profil -> checkMyProfil($email);
 //var_dump($showProfil);
 
 $showMyPublication = $publication-> getMyPublication($email);
-var_dump($showMyPublication);
+//var_dump($showMyPublication);
 $showAllPublications = $publication -> getAllPublications();
 
 // ci-dessous la gestion du bouton like 
 
-
-//if (isset($_GET['like']) && $_GET['like']=='likeIt'){
-
-
-    //$like= $_GET['like'];
-    $_SESSION['like'] = 0;
     
-    if(isset($_GET['like']) && $_GET['like']=='likeIt'){
-       $like= $_SESSION['like']+1;
-
-    }
+    
+       
+         
+   
+?>
+   
      
 
 

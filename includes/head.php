@@ -1,7 +1,7 @@
 
-  <link rel="stylesheet" type="text/css" href="./design/styleGeneral.css">
-  <link type="text/css" rel="stylesheet" href="../design/styleContact.css">
-    <!--<link rel="stylesheet" type="text/css" href="./design/tous.css">-->
+  <link rel="stylesheet" type="text/css" href="./design/tou.css">
+  <!--<link type="text/css" rel="stylesheet" href="../design/styleContact.css">-->
+
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset-utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -20,7 +20,7 @@
          <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
 
 <!-- pour contact-->
-<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<!--<link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">-->
     
 
 <link rel="apple-touch-icon" href="/docs/5.0/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
