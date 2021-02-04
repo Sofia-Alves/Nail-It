@@ -8,15 +8,7 @@
     
 <body>
     <?php  include_once './includes/header.php'; ?>
-
     <h1>WELCOME IN YOUR NAIL-IT NETWORK </h1>
-
-
-    <h2> logo </h2>
-
-
-
-
     <?php include_once './includes/footer.php'; ?>
 </body>    
 </html>
