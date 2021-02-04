@@ -103,6 +103,7 @@
             </div>
         </div>
 
+   <a href=./home_view.php>home</a>
     </div>
 </body>
 </html>
