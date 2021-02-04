@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include_once '../includes/head.php';?>
     <title><?= ucFirst($page); ?> Profil</title>
 </head>
 <body>
+      <?php include_once '../includes/header.php'; ?>
         <div class="profil">
             <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="<?=$getProfil['avatar'];?>" alt="Card image cap">
@@ -20,5 +20,6 @@
             </div>
 
         </div>
+        <?php include_once '../includes/footer.php'; ?>
 </body>
 </html>

@@ -3,7 +3,6 @@
 <html lang="en">
 <head>
     <?php include_once './includes/head.php';?>
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <title> <?= ucFirst($page); ?> Publication</title>
 </head>
 <body>
@@ -34,7 +33,8 @@
                             <h5 class="card-title"><?= $publi['titre'];?> </h5>
                             <p class="card-text"><?= $publi['description'];?></p>
                             <div class="like"><button name="like" id="like" value="likeIt">&hearts;</button></div>
-                            <i><?php echo 'votre publication a été liké '. $like.' fois!'; ?> </i>
+                            <script type/></script>
+                          
                           </div>
                         </div>
                     </div>

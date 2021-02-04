@@ -18,6 +18,14 @@
     padding-bottom: none;
     margin:0;
     padding:0;
+<<<<<<< HEAD
+    background-color: #E5D7D7;
+}
+
+/**** HEADER ****/
+header{
+
+=======
     font-family: lato regular;
 }
 
@@ -74,6 +82,7 @@ nav{
     div.click-to-top img:hover{
     z-index:9;
     }
+>>>>>>> c8570acf70e90d8625a1ad6145088976f577e5dc
     
     div.click-to-top span {display: none; position: absolute; background: grey; color: #fff; }
     div.click-to-top:hover span {display: block; }

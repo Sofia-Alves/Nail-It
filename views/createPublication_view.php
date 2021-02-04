@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<<<<<<< HEAD
+   <?php include_once '../includes/head.php';?>
+    <title><?= ucFirst($page)?>Créer publication</title>
+</head>
+<body>
+ <?php include_once '../includes/header.php';?>
+       <h1>Créér votre propre publication</h1> 
+=======
 <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?= ucFirst($page)?>Créer publication</title>
@@ -8,10 +16,11 @@
 <body>
  <?php include 'includes/header.php';?>
        <h1>Nouvelle publication</h1> 
+>>>>>>> c8570acf70e90d8625a1ad6145088976f577e5dc
     <div class="container">
             
           <h2>Veuillez inserer votre photo et Rajouter son titre et sa description </h2>
-          <form action="" method="post" enctype="multipart/form-data">
+          <form action="showpublications_view.php" method="post">
           <div class="titre">
             <label for="titre">Title</label><br/>
             <input type="text" name="titre" id="titre" placeholder="title" required/>
@@ -20,11 +29,14 @@
             <label for="description">Description</label><br/>
             <textarea name="description" id="description" cols="40" rows="30" placeholder="describe your article here !" required></textarea>
             </div>
+            </form>
+            <form action="showpublications_view.php" method="post" enctype="multipart/form-data">
             <div class="image">
                 <label for="image">Choose a photo for your publication</label>
                 <input type="file" name="image" id="image"></br>
 
             </div>
+            </form>
             <div class="btn btn-primary">
                 <button type="submit" name="publication" value="addPublication">Ajouter Publication</button>
             </div>
@@ -40,11 +52,11 @@
                   <?php endif; ?>
 
           </p>
-               <a href="####">CONSULTER VOTRE PUBLICATION</a>
-         </form>
+               <a href="index.php?page=showpublications">CONSULTER VOTRE PUBLICATION</a>
+         
       </div>
        
-        
+    <?php include_once '../includes/footer.php'; ?>    
 </body>
 </html>
 

@@ -34,8 +34,13 @@ class Bloggeuse{
         AND password= ?
         ');
         $reqDatas->execute(array($email,$pass));
+<<<<<<< HEAD
+        $datasExists = $reqDatas->rowCount();// boolean 
+        return $datasExists;
+=======
         $dataExists = $reqDatas->rowCount();// boolean 
         return $dataExists;
+>>>>>>> c8570acf70e90d8625a1ad6145088976f577e5dc
     }
 
    // fonction pour recuperer les info du tableau bloggeuse en BDD
@@ -44,10 +49,23 @@ class Bloggeuse{
    public function getDatasBloggeuse($email){
        global $db;
        $bloggeuse = $db -> prepare('
-       SELECT * FROM blogeuse WHERE email = ?');
-       $bloggeuse ->execute(array($email));
-       $req = $bloggeuse -> fetch(PDO::FETCH_ASSOC);
+       SELECT * FROM bloggeuse WHERE email = ?');
+       $bloggeuse -> execute(array($email));
+       $req = $bloggeuse -> fetchAll(PDO::FETCH_ASSOC);
        return $req ;
+   }
+
+   // fonction pour recuperer l id du bloggeuse
+
+   public function getIdBloggeuse($email){
+       global $db;
+       $idB=$db ->prepare('
+       SELECT id_bloggeuse 
+       FROM bloggeuse,
+       WHERE email =?');
+       $idB->execute(array($email));
+       $data = $idB ->fetch();
+       return $data;
    }
 
    
