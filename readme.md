@@ -6,7 +6,7 @@ Overview
 - And a dedicated marketplace in which you have the possibility to contact your favorite Nail stylist : 
   . to buy and sell products from the nail artists
 
-## Technologies Project is created with: 
+## Technologies that the project was created with: 
 HTML 
 CSS
 Bootstrap 
