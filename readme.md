@@ -3,7 +3,7 @@ Title
 Nail-It
 Overview
 - A social network related to Nails that enables people to show / presents their creation.
-- And a e-commerce in which you have the possibility to contact your favorite Nail stylist
+- And a dedicated marketplace in which you have the possibility to contact your favorite Nail stylist
 
 ## Technologies Project is created with: 
 HTML 
@@ -20,6 +20,7 @@ Features
 - Login to your account
 - Logout of your account
 - Contact a nail stylist
+- Marketplace 
 
 Running The Project
 Install Mamp  : https://www.mamp.info/en/downloads/
