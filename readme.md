@@ -15,11 +15,11 @@ MySql
 
 
 Features
-create a post 
-Upload a picture
-Login to your account
-Logout of your account
-Contact a nail stylist
+- create a post 
+- Upload a picture
+- Login to your account
+- Logout of your account
+- Contact a nail stylist
 
 Running The Project
 Install Mamp  : https://www.mamp.info/en/downloads/
@@ -30,11 +30,11 @@ Go to http://localhost:8888/nail-it/
 
 
 ##Structure of the project | Folder  | content  |
-| ------------ | ------------ |
-| ./  | Home Page |
-| ./design/  | CSS and Images and Products images |
-| ./views/  | PHP Front-en Pages  |
-| ./classes/  | PHP Back end  |
-| ./includes/  | Required Files  |
-| ./settings /  | Database Files  |
+- | ------------ | ------------ |
+- | ./  | Home Page |
+- | ./design/  | CSS and Images and Products images |
+- | ./views/  | PHP Front-en Pages  |
+- | ./classes/  | PHP Back end  |
+- | ./includes/  | Required Files  |
+- | ./settings /  | Database Files  |
 
